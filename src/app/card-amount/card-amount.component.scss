@@ -1,0 +1,18 @@
+.card-amount {
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 25px;
+    gap: 2rem;
+    margin: 2rem 0;
+    justify-content: center;
+    &__number {
+        margin-left: 5px;
+        font-size: 35px;
+        font-weight: bold;
+        span:last-child {
+            font-size: 45px;
+        }
+    }
+}

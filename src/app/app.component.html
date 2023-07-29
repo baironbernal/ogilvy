@@ -1,9 +1,15 @@
-<app-navbar></app-navbar>
-<app-banner></app-banner>
 <div class="main-container">
 
+    <app-navbar></app-navbar>
+    <app-banner></app-banner>
+    <div class="cards-amounts">
+        <app-card-amount [number]="150" [title1]="'HAPPY'" [title2]="'STUDENTS'"></app-card-amount>
+        <app-card-amount [number]="230" [title1]="'CERTIFIED'" [title2]="'COURSES'"></app-card-amount>
+        <app-card-amount [number]="980" [title1]="'AWARDS'" [title2]="'RECEIVED'"></app-card-amount>
+
+    </div>
+    <app-card-course></app-card-course>
+    <app-card-profile></app-card-profile>
+    <app-form></app-form>
+    <app-footer></app-footer>
 </div>
-<app-card-course></app-card-course>
-<app-card-profile></app-card-profile>
-<app-form></app-form>
-<app-footer></app-footer>
