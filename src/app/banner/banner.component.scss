@@ -1,0 +1,98 @@
+.banner {
+    width: auto;
+    text-align: center;
+    &__left,
+    &__main,
+    &__right {
+        @media only screen and (min-width: 900px) {
+            width: 30%;
+        }
+    }
+    &__ui {
+        font-size: 100px;
+        font-weight: bolder;
+    }
+    &__left,
+    &__right {
+        @media only screen and (min-width: 900px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__left {
+        margin-left: 25px;
+    }
+    &__beginner {
+        display: none;
+        &-description {
+            width: 160px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 6rem;
+            .square {
+                margin-right: 6px;
+                background-color: white;
+                height: 15px;
+                width: 15px;
+            }
+        }
+        @media only screen and (min-width: 900px) {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+    }
+    &__edition {
+        display: none;
+        @media only screen and (min-width: 900px) {
+            display: block;
+            align-self: flex-end;
+            max-width: 60px;
+            padding: 20px;
+            border: 2px solid white;
+            border-right: 0;
+            text-align: right;
+        }
+    }
+    &__arrow-right,
+    &__arrow-left {
+        display: none;
+        @media only screen and (min-width: 900px) {
+            display: block;
+        }
+    }
+    &__arrow-right {
+        text-align: left;
+    }
+    &__arrow-left {
+        text-align: right;
+    }
+    &__info {
+        &-description {
+            margin-bottom: 3.3rem;
+        }
+        @media only screen and (min-width: 900px) {
+            max-width: 21rem;
+        }
+    }
+    &__info-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        @media only screen and (min-width: 900px) {
+            justify-content: unset;
+        }
+    }
+    @media only screen and (min-width: 900px) {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 0;
+    }
+}
+
+.purple {
+    color: #B860FA;
+}

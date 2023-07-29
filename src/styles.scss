@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: krub-bold;
+    src: url(assets/fonts/Krub-Bold.ttf) format("opentype");
+}
+
+// @font-face {
+//     font-family: krub-bold-italic;
+//     src: url(assets/fonts/Krub-BoldItalic.ttf) format("opentype");
+// }
+// @font-face {
+//     font-family: krub-extra-light;
+//     src: url(assets/fonts/Krub-ExtraLight.ttf) format("opentype");
+// }
+// @font-face {
+//     font-family: krub-extra-light-italic;
+//     src: url(assets/fonts/Krub-ExtraLightItalic.ttf) format("opentype");
+// }
+// @font-face {
+//     font-family: krub-italic;
+//     src: url(assets/fonts/Krub-Italic.ttf) format("opentype");
+// }
+// @font-face {
+//     font-family: krub-light;
+//     src: url(assets/fonts/Krub-Light.ttf) format("opentype");
+// }
+// @font-face {
+//     font-family: krub-light-italic;
+//     src: url(assets/fonts/Krub-LightItalic.ttf) format("opentype");
+// }
+// @font-face {
+//     font-family: krub-medium;
+//     src: url(assets/fonts/Krub-Medium.ttf) format("opentype");
+// }
+// @font-face {
+//     font-family: krub-medium-italic;
+//     src: url(assets/fonts/Krub-MediumItalic.ttf) format("opentype");
+// }
+@font-face {
+    font-family: krub-regular;
+    src: url(assets/fonts/Krub-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family: krub-semibold;
+    src: url(assets/fonts/Krub-SemiBold.ttf) format("opentype");
+}
+
+* {
+    font-family: krub-regular;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #101010;
+    color: #ffffff;
+}
+
+a {
+    font-family: krub-semibold;
+    color: white;
+}
+
+button,
+.navbar,
+a {
+    font-family: krub-semibold;
+}
