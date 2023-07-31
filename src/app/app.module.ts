@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BannerComponent } from './banner/banner.component';
@@ -11,6 +12,10 @@ import { CardProfileComponent } from './card-profile/card-profile.component';
 import { CardCourseComponent } from './card-course/card-course.component';
 import { ButtonPurpleComponent } from './button-purple/button-purple.component';
 import { CardAmountComponent } from './card-amount/card-amount.component';
+import { CarouselCalificationsComponent } from './carousel-califications/carousel-califications.component';
+import { CardCalificationComponent } from './card-calification/card-calification.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,10 +28,13 @@ import { CardAmountComponent } from './card-amount/card-amount.component';
     CardProfileComponent,
     CardCourseComponent,
     ButtonPurpleComponent,
-    CardAmountComponent
+    CardAmountComponent,
+    
+    CarouselCalificationsComponent,
+         CardCalificationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

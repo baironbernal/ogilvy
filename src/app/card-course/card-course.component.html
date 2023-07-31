@@ -1,1 +1,14 @@
-<p>card-course works!</p>
+<div class="course">
+    <div class="course__numeral">
+        <span>{{course.id}}</span>
+    </div>
+    <div class="course__title">
+        {{course.name}}
+    </div>
+    <div class="course__description">
+        {{course.description}}
+    </div>
+    <div class="course__description">
+        <app-button-purple [name]="course.name"></app-button-purple>
+    </div>
+</div>

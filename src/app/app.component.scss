@@ -12,4 +12,24 @@
             gap: 2rem;
         }
     }
+    .accept-challenges {
+        &__images {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            img {
+                max-width: 100%;
+            }
+            @media only screen and (max-width: 1300px) {
+                img:last-child,
+                img:first-child {
+                    display: none;
+                }
+            }
+        }
+    }
+    .swiper {
+        width: 600px;
+        height: 300px;
+    }
 }

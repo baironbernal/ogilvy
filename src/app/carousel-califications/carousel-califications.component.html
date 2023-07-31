@@ -1,0 +1,7 @@
+<div class="keen-slider" #sliderRef>
+    <div *ngFor="let calification of califications" class="keen-slider__slide">
+        <app-card-calification [calification]="calification"></app-card-calification>
+    </div>
+
+    <button (click)="slider.next()">Derecha</button>
+    <button (click)="slider.prev()">Left</button>
