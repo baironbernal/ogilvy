@@ -9,8 +9,8 @@
     </div>
     <div class="accept-challenges">
         <div class="accept-challenges__images">
-            <img src="assets/images/accept-challenges/lateral-izquierdo.png" alt="Lateral Derecho">
-            <img src="assets/images/accept-challenges/accept-new-challenges.png" alt="Lateral Derecho">
+            <img src="assets/images/accept-challenges/lateral-izquierdo.png" alt="Lateral Izquierdo">
+            <img src="assets/images/accept-challenges/accept-new-challenges.png" alt="Nuevos retos">
             <img src="assets/images/accept-challenges/lateral-derecho.png" alt="Lateral Derecho">
         </div>
         <div class="accept-challenges__description">
@@ -21,7 +21,13 @@
     </div>
     <section class="courses">
         <app-card-course *ngFor="let course of courses" [course]="course"></app-card-course>
+
     </section>
+    <div class="more-courses">
+        <p>MORE COURSES</p>
+        <img src="/assets/images/shared/right-arrow.svg" alt="left arrow">
+    </div>
+    <app-us *ngFor="let item of us" [us]="item"></app-us>
     <app-carousel-califications></app-carousel-califications>
     <app-form></app-form>
     <app-footer></app-footer>

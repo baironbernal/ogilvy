@@ -1,0 +1,19 @@
+<section class="us">
+    <div class="us__left">
+        <div class="us__title">
+            <h1>{{us.title}}</h1>
+            <span class="purple">{{us.title_purple}}</span>
+        </div>
+
+        <div class="us__description">
+            {{us.description}}
+        </div>
+        <div class="button">
+            <app-button-purple [name]="us.button_name"></app-button-purple>
+        </div>
+    </div>
+    <div class="us__right">
+        <img src="{{us.img}}" alt="Image for us">
+    </div>
+
+</section>

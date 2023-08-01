@@ -1,0 +1,7 @@
+@import 'mixins';
+.us {
+    @include flexbox(flex, center, center);
+    &__left {
+        width: 23rem;
+    }
+}

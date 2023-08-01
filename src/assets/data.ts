@@ -84,4 +84,28 @@ export const data = {
         }
 
     ],
+    us: [{
+        title: 'About',
+        title_purple: 'US.',
+        img: 'assets/images/us/1.png',
+        description: 'Automatically detect Security Vulnerabilities and Security Hotspots during your code review. Write the most efficient code possible with SonarQube',
+        button_name: 'READ MORE',
+        items: ['Automatically detect','Automatically detect', 'Automatically detect', 'Automatically detect']
+    },
+    {
+        title: 'Why',
+        title_purple: 'US.',
+        img: 'assets/images/us/2.png',
+        description: 'Automatically detect Security Vulnerabilities and Security Hotspots during your code review. Write the most efficient code possible with SonarQube',
+        button_name: 'READ MORE',
+        items: ['Automatically detect','Automatically detect', 'Automatically detect', 'Automatically detect']
+    },
+    {
+        title: 'Why',
+        title_purple: 'US.',
+        img: 'assets/images/us/2.png',
+        description: 'Automatically detect Security Vulnerabilities and Security Hotspots during your code review. Write the most efficient code possible with SonarQube',
+        button_name: 'READ MORE',
+        items: ['Automatically detect','Automatically detect', 'Automatically detect', 'Automatically detect']
+    }]
 }

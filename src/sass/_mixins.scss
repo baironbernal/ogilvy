@@ -1,0 +1,6 @@
+@mixin flexbox($display, $justify, $align, $gap: auto) {
+    display: $display;
+    justify-content: $justify;
+    align-content: $align;
+    gap: $gap;
+}

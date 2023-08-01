@@ -14,6 +14,7 @@ import { ButtonPurpleComponent } from './button-purple/button-purple.component';
 import { CardAmountComponent } from './card-amount/card-amount.component';
 import { CarouselCalificationsComponent } from './carousel-califications/carousel-califications.component';
 import { CardCalificationComponent } from './card-calification/card-calification.component';
+import { UsComponent } from './us/us.component';
 
 
 
@@ -31,7 +32,8 @@ import { CardCalificationComponent } from './card-calification/card-calification
     CardAmountComponent,
     
     CarouselCalificationsComponent,
-         CardCalificationComponent
+         CardCalificationComponent,
+         UsComponent
   ],
   imports: [
     BrowserModule,
