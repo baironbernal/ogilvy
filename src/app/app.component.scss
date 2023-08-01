@@ -4,7 +4,6 @@
         margin: 0;
     }
     .cards-amounts {
-        margin: 4rem 0;
         @media only screen and (min-width: 900px) {
             display: flex;
             justify-content: space-evenly;
@@ -13,10 +12,13 @@
         }
     }
     .accept-challenges {
-        &__images {
+        &__images,
+        &__description {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+        }
+        &__images {
             img {
                 max-width: 100%;
             }
@@ -27,9 +29,24 @@
                 }
             }
         }
+        &__description {
+            margin-top: 4rem;
+            h1 {
+                font-size: 45px;
+                margin: 0 25px;
+                color: #1E2020;
+            }
+            @media only screen and (max-width: 1300px) {
+                display: none;
+            }
+        }
     }
-    .swiper {
-        width: 600px;
-        height: 300px;
+    .courses {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        @media only screen and (max-width: 1300px) {
+            display: block;
+        }
     }
 }

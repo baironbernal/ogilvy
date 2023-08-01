@@ -1,6 +1,36 @@
 .keen-slider {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 3rem;
+    margin: 0 auto;
+    &:not([data-keen-slider-disabled]) {
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+        align-content: flex-start;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        justify-content: space-around;
+        touch-action: pan-y;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -khtml-user-select: none;
+        max-width: 1150px;
+        gap: 90px;
+        justify-content: space-between;
+        .keen-slider__slide {
+            min-height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+    }
+    &:not([data-keen-slider-disabled])[data-keen-slider-reverse] {
+        flex-direction: row-reverse;
+    }
+    &:not([data-keen-slider-disabled])[data-keen-slider-v] {
+        flex-wrap: wrap;
+    }
+}
+
+.number-slide {
+    min-width: 300px !important;
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Course } from './interfaces/course.interface';
+import { data } from 'src/assets/data';
 
 
 @Component({
@@ -9,5 +11,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   title = 'ogilvy';
+  courses: Course[] = data.courses;
   
 }

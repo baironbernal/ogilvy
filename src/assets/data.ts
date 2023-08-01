@@ -81,17 +81,6 @@ export const data = {
             name: 'Course 4',
             description: 'Automatically detect Security Vulnerabilities and Security Hotspots during your code review. Write the most efficient code possible with SonarQube',
             buttonName: 'READ MORE'
-        }, {
-            id: 5,
-            name: 'Course 5',
-            description: 'Automatically detect Security Vulnerabilities and Security Hotspots during your code review. Write the most efficient code possible with SonarQube',
-            buttonName: 'READ MORE'
-        },
-        {
-            id: 6,
-            name: 'Course 6',
-            description: 'Automatically detect Security Vulnerabilities and Security Hotspots during your code review. Write the most efficient code possible with SonarQube',
-            buttonName: 'READ MORE'
         }
 
     ],

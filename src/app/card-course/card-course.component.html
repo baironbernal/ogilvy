@@ -1,14 +1,15 @@
 <div class="course">
     <div class="course__numeral">
-        <span>{{course.id}}</span>
+        <span>.</span><span>{{course.id}}</span>
     </div>
     <div class="course__title">
-        {{course.name}}
+        <p>{{course.name}}</p>
+        <div class="course__inner">&nbsp;</div>
     </div>
     <div class="course__description">
         {{course.description}}
     </div>
-    <div class="course__description">
-        <app-button-purple [name]="course.name"></app-button-purple>
+    <div class="course__button">
+        <app-button-purple [name]="'READ MORE'"></app-button-purple>
     </div>
 </div>

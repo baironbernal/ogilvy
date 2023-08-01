@@ -7,7 +7,7 @@ import { Calification } from '../interfaces/calification.interface';
 @Component({
   selector: 'app-carousel-califications',
   templateUrl: './carousel-califications.component.html',
-  styleUrls: ['./carousel-califications.component.scss']
+  styleUrls: ['./carousel-califications.component.scss',]
 })
 export class CarouselCalificationsComponent {
   @ViewChild("sliderRef") sliderRef:any;
@@ -20,11 +20,9 @@ ngAfterViewInit() {
   this.slider = new KeenSlider(this.sliderRef.nativeElement, {
     loop: true,
     mode: "free",
-    slides: { origin: "auto", perView: 4, spacing: 20 },
-    range: {
-      min: -3,
-      max: 3,
-    },
+    initial: 2,
+    slides: { origin: "center", perView: 3 },
+   
   })
 }
 
