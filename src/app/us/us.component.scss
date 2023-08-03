@@ -1,7 +1,29 @@
 @import 'mixins';
 .us {
-    @include flexbox(flex, center, center);
+    @include flexbox(flex, center, center, 10rem);
     &__left {
         width: 23rem;
+        @include flexbox(flex, center, center);
+        flex-direction: column;
+        gap: 2rem;
+        @media only screen and (max-width: 1300px) {
+            width: auto;
+        }
+    }
+    &__title {
+        @include flexbox(flex, space-between, center);
+        align-items: center;
+        font-size: 40px;
+    }
+    &__button {
+        margin: 0 auto;
+        width: 160px;
+        text-align: center;
+    }
+    &__right img {
+        width: 100%;
+    }
+    @media only screen and (max-width: 1300px) {
+        flex-direction: column;
     }
 }

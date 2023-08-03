@@ -1,0 +1,44 @@
+@import 'mixins';
+.footer {
+    background-color: #B860FA;
+    min-height: 500px;
+    flex-direction: column;
+    &__list,
+    &__suscription {
+        padding: 25px;
+    }
+    &__list {
+        h2 {
+            font-size: 30px;
+            border-bottom: 3px solid white;
+            padding-bottom: 20px;
+            margin-bottom: 2rem;
+        }
+        ul {
+            padding: 0;
+            li {
+                margin: 10px 0;
+            }
+        }
+    }
+    &__suscription {
+        text-align: right;
+        @include flexbox(flex, right, right, 2rem, column);
+        input {
+            height: 60px;
+            background-color: #B860FA;
+            border: 2px solid white;
+            outline: none;
+            caret-color: white;
+        }
+        @media only screen and (min-width: 900px) {
+            width: 20%;
+        }
+    }
+    &__social-networks {
+        @include flexbox(flex, right, start, 2rem);
+    }
+    @media only screen and (min-width: 900px) {
+        @include flexbox(flex, center, center, 2rem);
+    }
+}

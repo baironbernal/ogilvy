@@ -1,3 +1,5 @@
+@import 'mixins';
 .calification {
     text-align: center;
+    @include flexbox(flex, space-between, auto, 2rem, column)
 }

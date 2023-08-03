@@ -1,19 +1,16 @@
+@import 'mixins';
 .course {
     min-height: 200px;
     max-width: 200px;
     position: relative;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    @include flexbox(flex, auto, auto, 2rem, column);
     text-align: center;
     @media only screen and (max-width: 1300px) {
         max-width: 100%;
     }
     &__numeral {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexbox(flex, center, center);
         width: 50px;
         height: 50px;
         color: black;

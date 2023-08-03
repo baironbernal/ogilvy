@@ -25,10 +25,25 @@
     </section>
     <div class="more-courses">
         <p>MORE COURSES</p>
-        <img src="/assets/images/shared/right-arrow.svg" alt="left arrow">
+        <img class="arrow" src="/assets/images/shared/right-arrow.svg" alt="left arrow">
     </div>
     <app-us *ngFor="let item of us" [us]="item"></app-us>
+    <div class="video">
+        <div class="video__images-left">
+            <img src="assets/images/shared/down-arrow.svg" alt="down arrow">
+            <img src="assets/images/accept-challenges/lateral-izquierdo.png" alt="Lateral Izquierdo">
+        </div>
+        <div class="video__container">
+            <iframe src="https://www.youtube.com/embed/v0RLCJ7dPC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>
+        </div>
+        <div class="video__images-right">
+            <img src="assets/images/accept-challenges/lateral-izquierdo.png" alt="Lateral Izquierdo">
+            <img src="assets/images/shared/down-arrow.svg" alt="down arrow">
+        </div>
+
+    </div>
     <app-carousel-califications></app-carousel-califications>
-    <app-form></app-form>
-    <app-footer></app-footer>
+
+
 </div>
+<app-footer></app-footer>

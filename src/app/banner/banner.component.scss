@@ -1,3 +1,4 @@
+@import 'mixins';
 .banner {
     width: auto;
     text-align: center;
@@ -15,9 +16,7 @@
     &__left,
     &__right {
         @media only screen and (min-width: 900px) {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            @include flexbox(flex, space-between, auto, 0, column);
         }
     }
     &__center-image {
@@ -30,8 +29,7 @@
         display: none;
         &-description {
             width: 160px;
-            display: flex;
-            justify-content: space-around;
+            @include flexbox(flex, space-around, auto);
             margin-left: 6rem;
             .square {
                 margin-right: 6px;
@@ -80,17 +78,14 @@
         }
     }
     &__info-buttons {
-        display: flex;
+        @include flexbox(flex, center, auto, 2rem);
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 2rem;
         @media only screen and (min-width: 900px) {
             justify-content: unset;
         }
     }
     @media only screen and (min-width: 900px) {
-        display: flex;
-        justify-content: space-between;
+        @include flexbox(flex, space-between, auto);
         text-align: left;
         padding: 0;
     }

@@ -1,10 +1,12 @@
 <div class="keen-slider" #sliderRef>
     <div *ngFor="let calification of califications" class="keen-slider__slide number-slide">
         <app-card-calification [calification]="calification"></app-card-calification>
-
     </div>
 
 </div>
 
-<button (click)="slider.next()">Derecha</button>
-<button (click)="slider.prev()">Left</button>
+<div class="buttons-slider">
+    <img class="arrow" (click)="slider.prev()" src="/assets/images/shared/left-arrow.svg" alt="left arrow">
+    <img class="arrow" (click)="slider.next()" src="/assets/images/shared/right-arrow.svg" alt="left arrow">
+
+</div>

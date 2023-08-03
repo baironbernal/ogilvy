@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: krub-bold;
-    src: url(assets/fonts/Krub-Bold.ttf) format("opentype");
+    src: url(../assets/fonts/Krub-Bold.ttf) format("opentype");
 }
 
 // @font-face {
@@ -39,12 +39,12 @@
 // }
 @font-face {
     font-family: krub-regular;
-    src: url(assets/fonts/Krub-Regular.ttf) format("opentype");
+    src: url(../assets/fonts/Krub-Regular.ttf) format("opentype");
 }
 
 @font-face {
     font-family: krub-semibold;
-    src: url(assets/fonts/Krub-SemiBold.ttf) format("opentype");
+    src: url(../assets/fonts/Krub-SemiBold.ttf) format("opentype");
 }
 
 * {
@@ -67,7 +67,12 @@ a {
 button,
 .navbar,
 a {
+    cursor: pointer;
     font-family: krub-semibold;
+}
+
+h1 {
+    margin: 0 !important;
 }
 
 .cards-amounts,
@@ -75,10 +80,18 @@ a {
 .courses,
 .keen-slider,
 .more-courses,
-.us {
+.us,
+.video,
+.buttons-slider {
     margin: 5rem 0;
 }
 
 .purple {
     color: #B860FA;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    transition: 2s;
+    background-color: #B860FA;
 }

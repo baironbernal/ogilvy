@@ -1,3 +1,4 @@
+@import 'mixins';
 .main-container {
     margin: 0px 30px;
     @media only screen and (min-width: 900px) {
@@ -5,18 +6,13 @@
     }
     .cards-amounts {
         @media only screen and (min-width: 900px) {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            gap: 2rem;
+            @include flexbox(flex, space-evenly, start, 2rem);
         }
     }
     .accept-challenges {
         &__images,
         &__description {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            @include flexbox(flex, space-between, flex-start);
         }
         &__images {
             img {
@@ -42,16 +38,33 @@
         }
     }
     .courses {
-        display: flex;
-        justify-content: center;
-        gap: 4rem;
+        @include flexbox(flex, center, start, 4rem);
         @media only screen and (max-width: 1300px) {
             display: block;
         }
     }
     .more-courses {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexbox(flex, center, center);
+    }
+    .video {
+        @include flexbox(flex, space-between, flex-start);
+        &__images-left,
+        &__images-right {
+            display: none;
+            @media only screen and (min-width: 900px) {
+                @include flexbox(flex, center, center);
+                flex-direction: column;
+            }
+        }
+        &__container {
+            width: 100%;
+            iframe {
+                height: 400px;
+                width: 100%;
+                @media only screen and (min-width: 900px) {
+                    height: 800px;
+                }
+            }
+        }
     }
 }
